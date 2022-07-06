@@ -15,4 +15,4 @@ Use the up and down arrow keys to change the left hand octaves [z,s,x,d,c,v,g,b,
 
 # ScreenShot:
 
-![piyano_screenshot]('pyiano_screenshot.png')
+![piyano_screenshot](pyiano_screenshot.png)
