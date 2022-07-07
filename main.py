@@ -1,5 +1,3 @@
-from turtle import width
-from unittest import skip
 import pygame
 import piano_lists as pl
 from pygame import mixer
