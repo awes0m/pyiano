@@ -17,7 +17,7 @@ timer = pygame.time.Clock()
 WIDTH = 52 * 35
 HEIGHT = 400
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("aweS0m Piano")
+pygame.display.set_caption("aweS0m pPiano")
 active_whites = []
 active_blacks = []
 left_hand = pl.left_hand
@@ -231,27 +231,29 @@ while run:
                     active_whites.append([i, 30])
 
         if event.type == pygame.TEXTINPUT:
-            if event.text.upper() in left_dict:
-                if left_dict[event.text.upper()][1] == "#":
-                    index = black_labels.index(left_dict[event.text.upper()])
-                    black_sounds[index].play(0, 1000)
-                    active_blacks.append([index, 30])
-                else:
-                    index = white_notes.index(left_dict[event.text.upper()])
-                    white_sounds[index].play(0, 1000)
-                    active_whites.append([index, 30])
+            try:
+                if event.text.upper() in left_dict:
+                    if left_dict[event.text.upper()][1] == "#":
+                        index = black_labels.index(left_dict[event.text.upper()])
+                        black_sounds[index].play(0, 1000)
+                        active_blacks.append([index, 30])
+                    else:
+                        index = white_notes.index(left_dict[event.text.upper()])
+                        white_sounds[index].play(0, 1000)
+                        active_whites.append([index, 30])
 
-            if event.text.upper() in right_dict:
-                if right_dict[event.text.upper()][1] == "#":
-                    index = black_labels.index(right_dict[event.text.upper()])
-                    black_sounds[index].play(0, 1000)
-                    active_blacks.append([index, 30])
+                if event.text.upper() in right_dict:
+                    if right_dict[event.text.upper()][1] == "#":
+                        index = black_labels.index(right_dict[event.text.upper()])
+                        black_sounds[index].play(0, 1000)
+                        active_blacks.append([index, 30])
 
-                else:
-                    index = white_notes.index(right_dict[event.text.upper()])
-                    white_sounds[index].play(0, 1000)
-                    active_whites.append([index, 30])
-
+                    else:
+                        index = white_notes.index(right_dict[event.text.upper()])
+                        white_sounds[index].play(0, 1000)
+                        active_whites.append([index, 30])
+            except Exception:
+                print('Inavlid Key Press')
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_RIGHT and right_oct < 8:
                 right_oct += 1
