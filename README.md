@@ -8,10 +8,16 @@ A python- pygame based virtual piano application
 
 # Installation:
 
-Download for Windows [here](https://github.com/awes0m/pyiano/raw/main/Pyiano__%20The_Python_Piano_Windows_x86x64.zip)
+- Download for Windows [here](https://github.com/awes0m/pyiano/raw/main/Pyiano__%20The_Python_Piano_Windows_x86x64.zip)
+
+ - Extract the Zip file in your preffered folder
+ - The 'assets' [folder] and  'pyiano.exe' should be in the same folder
+
+-RUN pyiano.exe to launch the application.
 
 
-Instructions:
+ # Instructions:
+
 click the buttons with your mouse to play the notes
 or use the keybord key bundles, Divide in 2 groups for ease of play , the octaves can be moved across the board using arrow keys to play across all 52 keys using the keyboard
 
