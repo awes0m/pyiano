@@ -5,6 +5,12 @@ A python- pygame based virtual piano application
 * Python 
 * Pygame library
 
+
+# Installation:
+
+Download for Windows [here](Pyiano__ The_Python_Piano_Windows_x86x64.zip)
+
+
 Instructions:
 click the buttons with your mouse to play the notes
 or use the keybord key bundles, Divide in 2 groups for ease of play , the octaves can be moved across the board using arrow keys to play across all 52 keys using the keyboard
