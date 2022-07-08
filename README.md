@@ -8,7 +8,7 @@ A python- pygame based virtual piano application
 
 # Installation:
 
-Download for Windows [here](Pyiano__ The_Python_Piano_Windows_x86x64.zip)
+Download for Windows [here](https://github.com/awes0m/pyiano/raw/main/Pyiano__%20The_Python_Piano_Windows_x86x64.zip)
 
 
 Instructions:
